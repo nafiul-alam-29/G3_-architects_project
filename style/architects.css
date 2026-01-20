@@ -46,6 +46,12 @@
     margin-top: 130px;
  }
 
+ .section-title{
+    font-size: 1rem;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
 
 /* header style */
 
@@ -116,12 +122,10 @@
     max-width: 530px;
 }
 
-.feature-title{
-    margin-bottom: 24px;
-    font-weight: 700;
-}
+
 
 .feature-text{
+    color: #727272;
     font-weight: 600;
     font-size: 1rem;
     margin-bottom: 32px;
@@ -145,6 +149,42 @@
     color: #FF900E;
 }
 
+/* some fact style */
+
+.some-fact-title{
+    font-size: 3rem;
+    margin-bottom: 24px;
+
+}
+
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fact-card{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #727272;
+    margin-top: 5px;
+}
+
 /* responsive media query */
 
 @media screen and (max-width: 576px){
@@ -152,8 +192,15 @@
         flex-direction: column;
     }
 
-    .teams-img-container{
+    
+
+    .teams-img-container, .facts-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .facts-container{
+        justify-items: center;
+        
     }
 
     .teams-features{
