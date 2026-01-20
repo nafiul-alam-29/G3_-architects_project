@@ -185,6 +185,23 @@
     margin-top: 5px;
 }
 
+/* sponsor related style */
+
+.sponsor-info{
+    text-align: center;
+    max-width: 540px;
+    margin: 50px auto;
+}
+
+.sponsor-company{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsor-company img{
+    filter: grayscale(100%);
+}
+
 /* responsive media query */
 
 @media screen and (max-width: 576px){
@@ -194,12 +211,13 @@
 
     
 
-    .teams-img-container, .facts-container{
+    .teams-img-container, .facts-container, .sponsor-company{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .facts-container{
+    .facts-container, .sponsor-company{
         justify-items: center;
+        gap: 24px;
         
     }
 
